@@ -28,7 +28,7 @@ lazy val root = (project in file(".")).
     libraryDependencies ++= codefeedrDependencies
   )
 
-assembly / mainClass := Some("org.codefeedr.Main")
+assembly / mainClass := Some("org.codefeedr.pypi.Main")
 
 // make run command include the provided dependencies
 Compile / run  := Defaults.runTask(Compile / fullClasspath,
